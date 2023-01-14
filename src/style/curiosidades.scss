@@ -1,0 +1,134 @@
+
+.curiosidades {
+
+    .general-box {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 17px;
+    }
+
+    &__images {
+        display: flex;
+        gap: 9px;
+        justify-content: center;
+
+        img {
+            width: 136px;
+        }
+    }
+
+    &__text {
+        margin-top: 9px;
+        text-align: center;
+
+        h2 {
+
+            font-size: 24px;
+            color: #FBF6D4;
+        }
+
+        p {
+            font-size: 9px;
+            color: #fff;
+        }
+
+        button {
+            width: 100px;
+            background-color: #D2C4A5;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #191919;
+            font-family: 'Bebas Neue', cursive;
+            border: none;
+
+        }
+    }
+
+    @media (min-width:768px) {
+        .general-box {
+            padding: 0;
+        }
+
+        &__box {
+            display: flex;
+            flex-direction: row;
+            margin-top: 17px;
+            max-width: 764px;
+
+        }
+
+        &__images {
+            display: flex;
+            gap: 15px;
+
+
+            img {
+                width: 238px;
+            }
+        }
+
+        &__text {
+            text-align: left;
+            position: relative;
+            left: 14px;
+
+            h2 {
+                font-size: 25px;
+            }
+
+            p {
+                margin-top: 20px;
+            }
+
+            button {
+                font-family: 'Bebas Neue';
+                font-weight: 400;
+                margin-top: 8px;
+                height: 30px;
+
+            }
+
+        }
+    }
+
+    @media (min-width: 1280px) {
+        .general-box {
+            margin-left: 78px;
+            margin-right: 78px;
+            padding: 0;
+        }
+
+        &__box {
+        margin-top: 50px;
+        }
+
+        &__images {
+            gap: 25px;
+        
+            img {
+                width: 400px;
+            }
+        }
+
+        &__text {
+            margin-top: 20px;
+            h2 {
+               font-size: 32px;
+            }
+
+            p {
+               font-size: 11px;
+            }
+
+            button {
+               width: 120px
+               ;
+            }
+        }
+    }
+}
