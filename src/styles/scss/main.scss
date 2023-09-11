@@ -1,0 +1,238 @@
+@use 'mains';
+@use 'assista';
+@use 'curiosidades';
+@use 'elenco';
+@use 'temporadas';
+@use 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    background-color: #191919 !important;
+}
+
+// Inicio
+.navbar {
+
+    a {
+        img {
+            width: 36px;
+        }
+    }
+
+
+    ul {
+        li {
+            a {
+                color: white;
+
+                &:hover {
+                    color: bisque;
+                }
+            }
+        }
+    }
+}
+
+
+.header {
+    background-image: url(../../img/hero.svg);
+    background-size: cover;
+    height: 290px;
+
+
+
+    .general-box {
+        padding-left: 14px;
+        padding-right: 14px;
+
+
+
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        max-width: 167px;
+        width: 100%;
+
+
+        h1 {
+            img {
+                width: 165px;
+                filter: brightness(100%);
+
+            }
+        }
+
+    }
+
+    h2 {
+        width: 170px;
+        font-size: 10px;
+        color: #655A48;
+
+    }
+
+    p {
+        width: 197PX;
+        font-size: 9px;
+        color: #fff;
+
+
+    }
+
+    .__content button {
+        width: 120px;
+        height: 30px;
+        background-color: #3B372B;
+        color: #fff;
+        border-radius: 0px 5px 0px 0px;
+        font-size: 14px;
+        border: 1px solid #493e2c;
+
+    }
+}
+
+@media (min-width:768px) {
+
+    .header {
+        height: 550px;
+
+        .general-box {
+            padding-left: 25px;
+        }
+
+        h1 {
+            img {
+                width: 419px;
+                margin-top: 52px;
+            }
+        }
+
+        h2 {
+            width: 411px;
+            font-size: 14px;
+            margin-left: 15px;
+            margin-top: 10px;
+
+        }
+
+        p {
+            width: 419px;
+            font-size: 13px;
+            margin-top: 10px;
+            margin-left: 15px;
+        }
+
+        .__content button {
+            width: 157px;
+            height: 45px;
+            background: #3B372B;
+            font-size: 18px;
+            border: 3px solid #493e2c;
+            margin-top: 20px;
+            margin-left: 15px;
+
+        }
+
+        .amc-logo {
+            margin-left: 25px;
+            width: 50px;
+            height: 40px;
+        }
+
+    }
+}
+
+@media (min-width:1280px) {
+
+    .header {
+        height: 746px;
+
+        .general-box {
+            padding-left: 25px;
+        }
+
+        h1 {
+            img {
+                width: 500px;
+                margin-top: 92px;
+            }
+        }
+
+        h2 {
+            width: 291px;
+            font-size: 17px;
+        }
+
+        p {
+            width: 563px;
+            font-size: 16px;
+            margin-top: 10px;
+            margin-left: 15px;
+
+        }
+
+        .__content button {
+            width: 213px;
+            height: 50px;
+            font-size: 24px;
+        }
+
+        .amc-logo {
+            margin-left: 25px;
+            width: 56px;
+            height: 50px;
+        }
+    }
+
+    @media (min-width:1440px) {
+        .header {
+            height: 100vh;
+
+            .general-box {
+                padding-left: 120px;
+                padding-right: 120px;
+            }
+
+            h1 {
+                img {
+                    width: 750px;
+                }
+            }
+
+            h2 {
+
+                font-size: 24px;
+                color: black;
+            }
+
+            p {
+                width: 563px;
+                font-size: 16px;
+                margin-top: 10px;
+                margin-left: 15px;
+                color: #fff;
+            }
+
+            .__content button {
+                width: 213px;
+                height: 50px;
+                font-size: 24px;
+            }
+
+            .amc-logo {
+                margin-left: 25px;
+                width: 56px;
+                height: 50px;
+            }
+        }
+    }
+}

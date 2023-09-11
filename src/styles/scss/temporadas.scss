@@ -1,0 +1,190 @@
+
+.temporadas {
+    .general-box {
+        margin-left: 14px;
+        margin-right: 14px;
+
+        h2 {
+            font-size: 32px;
+            color: #FBF6D4;
+            text-align: center;
+            margin-top: 50px;
+        }
+    }
+
+    &__description {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+
+
+        &__box__impar {
+            display: flex;
+            height: 128px;
+            gap: 9px;
+            margin-bottom: 26px;
+
+          
+
+            h3 {
+                font-size: 18px;
+                color: #FBF6D4;
+            }
+
+            p {
+                font-size: 8px;
+                color: #FFFFFF;
+            }
+        }
+
+        &__box__par {
+            display: flex;
+            flex-direction: row-reverse;
+            margin-bottom: 26px;
+            gap: 9px;
+
+    
+         img{
+            width: 85px;
+         }
+
+            h3 {
+                font-size: 18px;
+                color: #FBF6D4;
+                text-align: end;
+
+            }
+
+            p {
+                font-size: 8px;
+                color: #FFFFFF;
+                text-align: end;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        .general-box {
+            margin-left: 35px;
+            margin-right: 35px;
+
+            h2 {
+                font-size: 48px;
+                color: #FBF6D4;
+            }
+        }
+
+        &__description {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 50px;
+
+
+            &__box__impar {
+                display: flex;
+                height: 166px;
+                gap: 25px;
+                
+
+
+              
+
+                h3 {
+                    font-size: 20px;
+                    color: #FBF6D4;
+                }
+
+                p {
+                    font-size: 10px;
+                    color: #fff;
+                }
+            }
+
+            &__box__par {
+
+                flex-direction: initial;
+                margin-bottom: 26px;
+                gap: 25px;
+
+              img{
+                width: 166px;
+              }
+                h3 {
+                    font-size: 20px;
+                    color: #FBF6D4;
+                    text-align: start;
+
+                }
+            
+
+                p {
+                    font-size: 10px;
+                    color: #fff;
+                    text-align: start;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1280px) {
+        .general-box {
+            margin-left: 78px;
+            margin-right: 78px;
+
+
+        }
+
+        &__description {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 50px;
+            height: 278px;
+            align-items: center;
+
+
+            &__box__impar {
+                height: 278px;
+                gap: 20px;
+                align-items: center;
+
+
+                img {
+                    height: 278px;
+                    width: 185px;
+                }
+
+                h3 {
+                    font-size: 32px;
+                }
+
+                p {
+                    font-size: 13px;
+                    margin-top: 28px;
+                }
+            }
+
+            &__box__par {
+                flex-direction: initial;
+                height: 278px;
+                align-items: center;
+                margin-bottom: 26px;
+                gap: 25px;
+                margin-left: 50px;
+
+                img {
+                    height: 278px;
+                    width: 185px;
+                }
+
+                h3 {
+                    font-size: 32px;
+                }
+
+                p {
+                    font-size: 13px;
+                    margin-top: 28px;
+                }
+            }
+        }
+    }
+}
